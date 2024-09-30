@@ -19,6 +19,7 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            border-radius: 20px; 
         }
 
         h1, h2, h3 {
@@ -31,23 +32,37 @@
         }
 
         .profile img {
-            width: 150px;
-            height: 150px;
+            width: 150px; 
+            height: 150px; 
             border-radius: 50%;
             object-fit: cover;
         }
 
-        .header, .education, .experience, .skills, .aboutme {
-            margin-bottom: 20px;
+        .header {
+        background-color: #333; 
+        color: white; 
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        width: 100%; 
         }
 
-        .header {
-            display: flex;
-            align-items: center;
+        .profile {
+            margin-right: -100px; 
         }
 
         .header div {
-            margin-left: 20px;
+            margin-left: 120px;
+        }
+
+        .header a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
         }
 
         .education, .experience, .aboutme {
@@ -71,80 +86,129 @@
             border-radius: 20px;
         }
 
-        .contact-info {
-            margin-top: 20px;
-        }
-        
-        .contact-info ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .contact-info ul li {
-            margin-bottom: 5px;
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px; 
         }
 
+        footer .column {
+            text-align: center;
+            width: 30%;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .column h3, .column ul li a {
+            color: white;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <div class="profile">
-                <img src="./img/avatar.jpg" alt="My Photo">
-            </div>
-            <div>
-                <h1>Nguyễn Hoàng Thiên Bảo</h1>
-                <p> Lập trình viên</p>
-                [<a href="https://github.com/ThienBao224"><strong>GitHub</strong></a>]
-                [<a href="./img/CV.pdf"><strong>Resume/CV</strong> </a>]
-            </div>
+    <div class="header">
+        <div class="profile">
+            <img src="./img/avatar.jpg" alt="My Photo">
         </div>
+        <div>
+            <h1 style=" color: white;" >Nguyễn Hoàng Thiên Bảo</h1>
+            <p>Lập trình viên/Programmer</p>
+            [<a href="https://github.com/ThienBao224"><strong>GitHub</strong></a>]
+            [<a href="./img/CV.pdf"><strong>Resume/CV</strong> </a>]
+        </div>
+    </div>
+
+    <div class="container">
         <div class="aboutme">
-            <h2>Giới thiệu về tôi</h2>
+            <h2>Giới thiệu về tôi/About Me</h2>
             <ul>
                 <li>Mục tiêu của tôi là trở thành một kỹ sư phần mềm chuyên nghiệp và góp phần vào các giải pháp sáng tạo. Tôi luôn tìm hiểu và học hỏi các công nghệ mới nhằm cải thiện kỹ năng của mình.</li>
+                <li>My goal is to become a professional software engineer and contribute to innovative solutions. I am always exploring and learning new technologies to improve my skills.</li>
             </ul>
         </div>
+
         <div class="education">
-            <h2>Học vấn</h2>
+            <h2>Học vấn/Education</h2>
             <ul>
-                <li><strong>Trường Đại học Sài Gòn</strong> - Khoa Công nghệ thông tin (2022 -  đến nay)</li>
+                <li><strong>Trường Đại học Sài Gòn/SAIGON UNIVERSITY</strong> - Khoa Công nghệ thông tin/Information Technology (2022 - Present)</li>
             </ul>
         </div>
 
         <div class="experience">
-            <h2>Kinh nghiệm làm việc</h2>
+            <h2>Kinh nghiệm làm việc/Experience</h2>
             <ul>
-
-
-
-
-
-
-
+                <li>
+                    <strong>Quản lý cửa hàng bán bánh/Bakery Manager</strong><br>
+                    Front-end: Java Swing<br>
+                    Số lượng thành viên/Project team: 3<br>
+                    [<a href="https://github.com/ThienBao224/JAVA">GitHub</a>]
+                </li>
             </ul>
         </div>
 
         <div class="skills">
-            <h2>Kỹ năng</h2>
+            <h2>Kỹ năng/Skills</h2>
             <ul>
-                <li>SQL , Git </li>
-                <li>HTML , CSS</li>
-                <li>C++ , Java , JavaScript </li>
-
-            </ul>
-        </div>
-
-        <div class="contact-info">
-            <h2>Thông tin liên hệ</h2>
-            <ul>
-                <li><strong>Email:</strong> nguyenhoangthienbao022@gmail.com</li>
-                <li><strong>Phone:</strong> +84 868 489 593</li>
-                <li><strong>Địa chỉ:</strong> Thành phố Hồ Chí Minh</li>
+                <li><strong>SQL , Git</strong> </li>
+                <li><strong>HTML , CSS</strong></li>
+                <li><strong>C++ , Java , JavaScript</strong></li>
+                <li><strong>Teamwork , MOS  </strong></li>
             </ul>
         </div>
     </div>
+
+    <footer>
+        <div class="column">
+            <h3>Thông tin về tôi/About Me</h3>
+            <ul>
+                <li>Birthday: 02/02/2004</li>
+                <li>Address: Ho Chi Minh City</li>
+                <li>Hobby: Đọc sách</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Liên hệ/Contact</h3>
+            <ul>
+                <li>Email: nguyenhoangthienbao022@gmail.com</li>
+                <li>Phone: +84 868 489 593</li>
+                <li><a href="https://zalo.me/0868489593">Zalo</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Mạng xã hội/Social Network</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/BaoThiennThienBaoo/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/nh_th.bao/">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@thienbao..nh">Tiktok</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
